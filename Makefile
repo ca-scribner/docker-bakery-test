@@ -2,7 +2,7 @@ DOCKERFILE := Dockerfile.template
 MKFILE_PATH := $(abspath $(lastword $(MAKEFILE_LIST)))
 ROOT_DIR_PATH := $(dir $(MKFILE_PATH))
 CONFIG_PATH := ${ROOT_DIR_PATH}config.json
-DOCKER_BAKERY_PATH := ${ROOT_DIR_PATH}docker-bakery
+DOCKER_BAKERY_PATH := ${ROOT_DIR_PATH}docker-bakery-binaries/docker-bakery-1.2.0
 
 .DEFAULT_GOAL: usage
 
